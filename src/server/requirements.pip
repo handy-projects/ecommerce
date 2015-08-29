@@ -1,4 +1,6 @@
+Momoko==2.1.1
 backports.ssl-match-hostname==3.4.0.2
 certifi==2015.04.28
+psycopg2==2.6.1
 tornado==4.2.1
 wsgiref==0.1.2
