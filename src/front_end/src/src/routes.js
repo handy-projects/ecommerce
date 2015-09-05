@@ -9,12 +9,20 @@ import FeaturedPage from "./pages/FeaturedPage";
 
 import ProductListPage from "./pages/ProductListPage";
 
+import LoadingPage from "./pages/LoadingPage";
+
 export default {
 
   home: {
     path: "/",
     method: "get",
     handler: HomePage
+  },
+
+  loader: {
+    path: "/loading",
+    method: "get",
+    handler: LoadingPage
   },
 
   featured: {

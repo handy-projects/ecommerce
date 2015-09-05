@@ -8,7 +8,11 @@ if (process.env.BROWSER) {
 class LoadingPage extends React.Component {
 
   render() {
-    return <div className="Loader Animate--slow Animate-fadeIn" />;
+    return (
+      <div>
+        <div className="Loader Animate--slow Animate-fadeIn"></div>
+      </div>
+    );
   }
 
 }

@@ -1,6 +1,8 @@
 @import 'constants/colors';
 @import 'constants/typography';
 @import 'utils/normalize';
+$icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
+@import '~bootstrap-sass/assets/stylesheets/_bootstrap.scss';
 
 html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);

@@ -21,7 +21,10 @@ module.exports = {
     loaders: [
       { test: /\.(jpe?g|png|gif|svg)$/, loader: "file" },
       { test: /\.js$/, exclude: /node_modules/, loaders: [strip.loader("debug"), "babel"] },
-      { test: /\.scss$/, loader: ExtractTextPlugin.extract("style", "css!autoprefixer?browsers=last 2 version!sass") }
+      { test: /\.scss$/, loader: ExtractTextPlugin.extract("style", "css!autoprefixer?browsers=last 2 version!sass") },
+      {test: /\.woff(2)?(\?v=\d+\.\d+\.\d+)?$/, loader: "url?limit=10000&mimetype=application/font-woff" },
+      {test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/, loader: "url?limit=10000&mimetype=application/octet-stream" },
+      {test: /\.eot(\?v=\d+\.\d+\.\d+)?$/, loader: "file" }
     ]
   },
   plugins: [
