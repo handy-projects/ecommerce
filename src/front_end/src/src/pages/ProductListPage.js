@@ -26,7 +26,7 @@ class ProductListPage extends React.Component {
         <ul>
           {
             products.map(prod =>
-              <li>{prod.name}</li>
+              <li key={ prod.name }>{prod.name}</li>
             )
           }
         </ul>
