@@ -2,6 +2,8 @@
 
 import { loadFeaturedPhotos, loadPhoto } from "../actions/PhotoActionCreators";
 
+import { loadProducts } from "../actions/ProductActionCreators";
+
 const InitActions = {
 
   featuredPage(context, route, done) {
@@ -12,6 +14,10 @@ const InitActions = {
   photoPage(context, route, done) {
     const id = route.getIn(["params", "id"]);
     context.executeAction(loadPhoto, { id }, done);
+  },
+
+  productListPage(context, route, done) {
+    context.executeAction(loadProducts, done);
   },
 
   // do not load something, just send an error in the callback

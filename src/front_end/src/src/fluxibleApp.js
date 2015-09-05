@@ -10,6 +10,7 @@ import FeaturedStore from "./stores/FeaturedStore";
 import HtmlHeadStore from "./stores/HtmlHeadStore";
 import IntlStore from "./stores/IntlStore";
 import PhotoStore from "./stores/PhotoStore";
+import ProductStore from "./stores/ProductStore";
 
 // Create the fluxible app using Application as root component
 const app = new Fluxible({ component: Application });
@@ -26,5 +27,6 @@ app.registerStore(FeaturedStore);
 app.registerStore(HtmlHeadStore);
 app.registerStore(IntlStore);
 app.registerStore(PhotoStore);
+app.registerStore(ProductStore);
 
 export default app;

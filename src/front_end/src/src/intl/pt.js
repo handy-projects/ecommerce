@@ -37,6 +37,10 @@ export default {
 
       "attribution": "Foto de {userLink}",
       "rating": "Nota {rating}"
+    },
+
+    "navbar": {
+      "products": "Products List"
     }
   }
 };

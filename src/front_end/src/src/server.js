@@ -55,6 +55,7 @@ export default function (callback) {
   const fetchr = fluxibleApp.getPlugin("FetchrPlugin");
   fetchr.registerService(require("./services/photos"));
   fetchr.registerService(require("./services/photo"));
+  fetchr.registerService(require("./services/products"));
 
   // Use the fetchr middleware (will enable requests from /api)
 
@@ -84,4 +85,3 @@ export default function (callback) {
   return app.listen(app.get("port"), () => callback(app));
 
 }
-

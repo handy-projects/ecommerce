@@ -7,6 +7,8 @@ import HomePage from "./pages/HomePage";
 import PhotoPage from "./pages/PhotoPage";
 import FeaturedPage from "./pages/FeaturedPage";
 
+import ProductListPage from "./pages/ProductListPage";
+
 export default {
 
   home: {
@@ -27,6 +29,13 @@ export default {
     method: "get",
     handler: PhotoPage,
     action: InitActions.photoPage
+  },
+
+  products: {
+    path: `/products`,
+    method: "get",
+    handler: ProductListPage,
+    action: InitActions.productListPage
   },
 
   // This route doesn't point to any handler.

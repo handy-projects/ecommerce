@@ -33,7 +33,7 @@ class NavBar extends Component {
         </div>
         <div className="NavBar-links">
           {
-            features.map(feature => {
+            features.slice(0, 3).map(feature => {
               let className = "NavBar-link";
 
               if (currentFeature === feature) {
@@ -51,6 +51,11 @@ class NavBar extends Component {
               );
             })
           }
+
+          <NavLink
+            routeName="products">
+            <FormattedMessage message={ `navbar.products` } />
+          </NavLink>
         </div>
         <div className="NavBar-locales">
           <LocaleSwitcher />
