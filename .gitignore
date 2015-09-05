@@ -1,0 +1,5 @@
+# Node app depenencies
+node_modules
+
+# Minified client for front_end
+build
