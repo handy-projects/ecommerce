@@ -4,7 +4,7 @@ module.exports = {
       'webpack/hot/only-dev-server',
       "./js/app.jsx"
     ],
-    // devtool: "source-map", // will add webpack:// into Chrome dev-cli
+    devtool: "source-map", // will add webpack:// into Chrome dev-cli
     output: {
         path: __dirname + '/build',
         filename: "bundle.min.js"

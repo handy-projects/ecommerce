@@ -1,4 +1,8 @@
 import React from 'react';
+import Router from 'react-router';
+import { DefaultRoute, Link, Route, RouteHandler } from 'react-router';
+
+var data = Immutable.OrderedSet([1]);
 
 let Nav = React.createClass({
 
@@ -22,13 +26,15 @@ let Nav = React.createClass({
                            <a href="#/">Home</a>
                       </li>
                       <li>
-                          <a href="#/about">About</a>
+                        {data.toSeq().map(v => (
+                           <Link to="about" key={v}>{v}</Link>
+                         )).toArray()}
                       </li>
                       <li>
                           <a href="#/projects">Projects</a>
                       </li>
                       <li>
-                          <a href="#/contact">Contact</a>
+                          <a href="/contact">Contact</a>
                       </li>
                       <li>
                           <a href="//grievoushead.github.io/video-calls/">Video Call</a>
