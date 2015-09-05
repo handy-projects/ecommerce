@@ -1,0 +1,13 @@
+{
+  "watch": [
+    "config",
+    "src/constants",
+    "src/intl",
+    "src/server",
+    "src/services",
+    "src/app.js",
+    "src/server.js",
+    "src/routes.js",
+    "src/utils"
+  ]
+}

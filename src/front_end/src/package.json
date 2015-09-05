@@ -1,0 +1,85 @@
+{
+  "name": "isomorphic500",
+  "version": "2.0.0",
+  "description": "Example of an isomorphic React app using fluxible and webpack",
+  "main": "index.js",
+  "scripts": {
+    "start": "NODE_ENV=production node index",
+    "dev": "NODE_ENV=development DEBUG=isomorphic500 nodemon index.js",
+    "prod": "NODE_ENV=production PORT=8080 DEBUG=isomorphic500 node index",
+    "build": "webpack --stats --config ./webpack/prod.config.js",
+    "postinstall": "npm run build",
+    "lint": "eslint index.js src webpack config"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gpbl/isomorphic-react-template.git"
+  },
+  "keywords": [
+    "fluxible",
+    "isomorphic",
+    "react",
+    "flux"
+  ],
+  "author": "gpbl <io@gpbl.org> (https://github.com/gpbl)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gpbl/isomorphic-react-template/issues"
+  },
+  "engines": {
+    "node": "0.12.x"
+  },
+  "homepage": "https://github.com/gpbl/isomorphic-react-template",
+  "dependencies": {
+    "autoprefixer-loader": "2.0.0",
+    "babel": "5.8.21",
+    "babel-core": "5.8.22",
+    "babel-eslint": "4.0.10",
+    "babel-loader": "5.3.2",
+    "body-parser": "1.13.3",
+    "compression": "1.5.2",
+    "cookie-parser": "1.3.5",
+    "css-loader": "0.16.0",
+    "csurf": "1.8.3",
+    "debug": "2.2.0",
+    "es6-promise": "3.0.2",
+    "eslint": "1.2.1",
+    "eslint-config-gpbl": "1.0.2",
+    "eslint-plugin-react": "3.2.3",
+    "expose-loader": "0.7.0",
+    "express": "4.13.3",
+    "extract-text-webpack-plugin": "0.8.2",
+    "favicon": "0.0.2",
+    "file-loader": "0.8.4",
+    "fluxible": "0.5.1",
+    "fluxible-addons-react": "0.1.6",
+    "fluxible-plugin-fetchr": "0.3.6",
+    "fluxible-router": "0.2.1",
+    "immutable": "3.7.4",
+    "intl": "1.0.0",
+    "intl-locales-supported": "1.0.0",
+    "intl-messageformat": "1.1.0",
+    "locale": "0.0.20",
+    "lodash": "3.10.1",
+    "morgan": "1.6.1",
+    "node-libs-browser": "0.5.2",
+    "node-sass": "3.2.0",
+    "react": "0.13.3",
+    "react-intl": "1.2.0",
+    "sass-loader": "2.0.1",
+    "serialize-javascript": "1.0.0",
+    "serve-favicon": "2.3.0",
+    "serve-static": "1.10.0",
+    "strip-loader": "0.1.0",
+    "style-loader": "0.12.3",
+    "superagent": "1.3.0",
+    "webpack": "1.11.0",
+    "webpack-error-notification": "0.1.4",
+    "webpack-stats-plugin": "0.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "1.4.1",
+    "react-hot-loader": "1.3.0",
+    "webpack-dev-server": "1.10.1"
+  }
+}
