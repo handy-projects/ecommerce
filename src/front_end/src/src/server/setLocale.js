@@ -2,7 +2,7 @@
 
 import config from "../config";
 
-const debug = require("debug")("isomorphic500");
+const debug = require("debug")("ecommerce");
 
 const setLocale = (req, res, next) => {
   debug("Detected locale (from browser) is %s", req.locale);

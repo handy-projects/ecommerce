@@ -4,7 +4,7 @@
 
 import isIntlLocaleSupported from "intl-locales-supported";
 
-const debug = require("debug")("isomorphic500");
+const debug = require("debug")("ecommerce");
 
 const IntlUtils = {
 

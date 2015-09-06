@@ -5,8 +5,8 @@ export default {
   messages: {
 
     "meta": {
-      "title": "isomorphic500",
-      "description": "Demo application made with React and Fluxible",
+      "title": "React E-Commerce",
+      "description": "E-Commerce platform for bootstrapping small business",
       "loadingTitle": "Loading…",
       "errorTitle": "Error displaying this page",
       "notFoundTitle": "Page not found"
@@ -27,7 +27,7 @@ export default {
     },
 
     "home": {
-      "welcome": "Welcome to isomorphic500. Now explore some photo..."
+      "welcome": "Welcome to react ecommerce. Now explore some products..."
     },
 
     "photo": {

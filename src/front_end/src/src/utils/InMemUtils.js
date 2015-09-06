@@ -5,7 +5,7 @@
 
 import config from "../config";
 
-const debug = require("debug")("isomorphic500");
+const debug = require("debug")("ecommerce");
 
 const InMemoryStorage = {
   products: [{

@@ -1,35 +1,37 @@
 {
-  "name": "isomorphic500",
-  "version": "2.0.0",
-  "description": "Example of an isomorphic React app using fluxible and webpack",
+  "name": "ecommerce",
+  "version": "1.0.0",
+  "description": "E-Commerce platform for bootstrapping small business",
   "main": "index.js",
   "scripts": {
     "start": "NODE_ENV=production node index",
-    "dev": "NODE_ENV=development DEBUG=isomorphic500 nodemon index.js",
-    "prod": "NODE_ENV=production PORT=8080 DEBUG=isomorphic500 node index",
+    "dev": "NODE_ENV=development DEBUG=ecommerce nodemon index.js",
+    "prod": "NODE_ENV=production PORT=8080 DEBUG=ecommerce node index",
     "build": "webpack --stats --config ./webpack/prod.config.js",
     "postinstall": "npm run build",
     "lint": "eslint index.js src webpack config"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gpbl/isomorphic-react-template.git"
+    "url": "https://github.com/handy-projects/ecommerce.git"
   },
   "keywords": [
     "fluxible",
     "isomorphic",
     "react",
-    "flux"
+    "flux",
+    "ecommerce",
+    "internet-shop"
   ],
-  "author": "gpbl <io@gpbl.org> (https://github.com/gpbl)",
+  "author": "Grievoushead <wbserg@gmail.com> (https://github.com/Grievoushead)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/gpbl/isomorphic-react-template/issues"
+    "url": "https://github.com/handy-projects/ecommerce/issues"
   },
   "engines": {
     "node": "0.12.x"
   },
-  "homepage": "https://github.com/gpbl/isomorphic-react-template",
+  "homepage": "https://github.com/handy-projects/ecommerce",
   "dependencies": {
     "autoprefixer-loader": "2.0.0",
     "babel": "5.8.21",
