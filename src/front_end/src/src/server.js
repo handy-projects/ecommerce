@@ -27,6 +27,8 @@ export default function (callback) {
   app.set("host", process.env.HOST || "0.0.0.0");
   app.set("port", process.env.PORT || 3000);
 
+  app.disable('x-powered-by');
+
   app.use(morgan(app.get("env") === "production" ? "combined" : "dev"));
   app.use(bodyParser.json());
   app.use(cookieParser());
