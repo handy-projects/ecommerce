@@ -1,0 +1,5 @@
+# python virtualenv folder
+env
+
+# django local db
+db.sqlite3
