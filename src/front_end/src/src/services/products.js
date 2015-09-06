@@ -1,6 +1,6 @@
-//import { get } from "../utils/APIUtils";
+import { getProducts } from "../utils/APIUtils";
 
-import { get } from "../utils/InMemUtils";
+//import { get } from "../utils/InMemUtils";
 
 // Fetchr service to load photos for the given feature.
 
@@ -15,7 +15,7 @@ export default {
     const options = {
       locale: req.locale
     };
-    get('products', done);
+    getProducts(done);
   }
 
 };

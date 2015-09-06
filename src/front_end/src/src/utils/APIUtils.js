@@ -41,6 +41,30 @@ const APIUtils = {
 
         done(null, res.body);
       });
+  },
+
+  getProducts(done) {
+
+    debug("Sending GET request to tornado api");
+
+
+    request.get('http://localhost:8001/products')
+      //.set("accept-language", locale)
+      //.query(query)
+      .end((err, res) => {
+        debug("Received response %s", res && res.status);
+        debug("Received response %s", res && JSON.stringify(res));
+        if (err) {
+          if (err.status) {
+            // Normalize statusCode vs. status
+            err.statusCode = err.status;
+          }
+
+          return done(err);
+        }
+
+        done(null, JSON.parse(res.text));
+      });
   }
 
 };
